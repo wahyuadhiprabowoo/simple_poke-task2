@@ -2,7 +2,7 @@
   "name": "simple-pokedex",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://demo.pylearn.me/",
+  
   "dependencies": {
     "@tanstack/react-query": "^4.0.10",
     "@testing-library/jest-dom": "^5.16.5",
