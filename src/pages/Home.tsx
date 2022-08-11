@@ -25,7 +25,7 @@ const Home = () => {
               const id = splitUrl[1].slice(0, -1);
               return id;
        };
-       console.log(page)
+       console.log(page, data)
        return (
 
               <div className="w-full h-screen">

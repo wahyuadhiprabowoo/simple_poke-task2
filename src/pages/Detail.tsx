@@ -8,7 +8,9 @@ function Detail() {
               fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then((r) => r.json())
        );
 
-       if (isLoading) { return <span>Loading . . .</span> }
+       if (isLoading) {
+              return <div className="mx-auto loader"></div>
+       }
 
        if (error) {
               return <span>An error has occurred: </span>
