@@ -28,7 +28,7 @@ const Home = () => {
        console.log(page, data)
        return (
 
-              <div className="w-full h-screen">
+              <div className="w-full h-full">
                      <h1 className="px-4 my-12 text-4xl font-bold text-center">Simple Pokedex With <span className="block ">ReactQuery dan ReactRouter</span></h1>
 
                      <div className="flex flex-wrap justify-center mx-12 my-12">
@@ -45,7 +45,7 @@ const Home = () => {
                             </ul>))}
                      </div >
 
-                     <div className="flex items-end justify-end mx-4 my-4">
+                     <div className="flex items-end justify-end mx-4 my-5">
 
                             <button className="mr-4 btn btn-accent" onClick={() => setPage(page <= 1 ? 1 : page - 25)}>Prev</button>
                             <button className="font-bold btn btn-disabled">{page} </button>
@@ -56,26 +56,3 @@ const Home = () => {
 };
 
 export default Home;
-
-                     // {
-                     //        data.results.map((value: { name: string, url: string }) => (
-                     //               <div className="">
-
-                     //                      <ul className="">
-
-                     //                             <li className="p-3 mt-2 font-bold list-inside hover:bg-slate-200 hover:text-gray-900 hover:cursor-pointer">
-
-                     //                                    <Link to={"detail-pokemon/" + getId(value.url)}>
-                     //                                           {value.name}
-                     //                                    </Link>
-                     //                             </li>
-                     //                      </ul>
-                     //               </div>
-                     //        ))
-                     // }
-
-                     // <hr />
-                     // <div className="mx-4 my-4 pages">
-                     //        <button className="mr-4 btn">Selanjutnya</button>
-                     //        <button className="ml-4 btn">Sebelumnya</button>
-                     // </div>
